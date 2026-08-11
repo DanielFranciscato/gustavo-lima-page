@@ -1,0 +1,245 @@
+/* ==========================================
+   Fonte Personalizada
+   ========================================== */
+@font-face {
+    font-family: 'HDColton';
+    src: url('../assets/fonts/HDColton.woff2') format('woff2');
+    font-display: swap;
+}
+
+/* ==========================================
+   Variáveis Globais - Paleta Oficial
+   ========================================== */
+:root {
+    --blue-primary: #0A6BCC;
+    --blue-dark: #1E3459;
+    --blue-deep: #015A9C;
+    --yellow: #EDE648;
+    --coral: #FF8D76;
+    --aqua: #78D9B2;
+    --beige: #EAD5BD;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+/* ==========================================
+   Reset Universal
+   ========================================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* ==========================================
+   Padrões Base
+   ========================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #fff;
+    color: var(--blue-dark);
+    font-family: 'HDColton', Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button,
+a {
+    font-family: inherit;
+}
+
+/* ==========================================
+   Header (.site-header)
+   ========================================== */
+.site-header {
+    position: relative;
+    z-index: 100;
+    background: var(--aqua);
+}
+
+.header-inner {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+}
+
+.brand img {
+    width: 190px;
+    max-width: 190px;
+}
+
+.menu-button {
+    width: 48px;
+    height: 48px;
+    border: none;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.menu-button span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--blue-dark);
+}
+
+/* ==========================================
+   Side-Rail (.side-rail)
+   ========================================== */
+.side-rail {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 54px;
+    height: 100vh;
+    z-index: 999;
+    background: var(--blue-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.side-rail-menu {
+    width: 100%;
+    min-height: 80px;
+    background: var(--aqua);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.side-rail-menu span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: var(--white);
+}
+
+.side-rail-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.side-rail-title {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: 'HDColton', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: var(--aqua);
+    white-space: nowrap;
+}
+
+.social-icon {
+    color: var(--blue-primary);
+    width: 20px;
+    height: 20px;
+}
+
+.whatsapp-float {
+    width: 48px;
+    height: 48px;
+    background: var(--aqua);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.whatsapp-float svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
+/* ==========================================
+   Ajuste para o conteúdo principal
+   ========================================== */
+main,
+.site-footer {
+    padding-right: 54px;
+}
+
+/* ==========================================
+   Hero Section
+   ========================================== */
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 10px 34px;
+    background: var(--aqua);
+    color: var(--blue-dark);
+    font-family: 'HDColton', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 28px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero-cta:hover {
+    background: #6bcfab;
+}
+
+/* ==========================================
+   Purchase Strip
+   ========================================== */
+.purchase-strip {
+    min-height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--blue-primary);
+    color: var(--yellow);
+    font-family: 'HDColton', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: clamp(20px, 3vw, 32px);
+    text-transform: uppercase;
+    text-align: center;
+}

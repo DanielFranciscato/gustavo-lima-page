@@ -1,0 +1,1 @@
+// JavaScript principal - Embaixador em Alto-Mar
