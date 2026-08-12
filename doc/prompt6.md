@@ -1,26 +1,23 @@
-Implementação da Seção MSC Divina (Navio e Galeria)
+Implementação da Seção de Cabines
 
 ## Objetivo
-Construir a Seção 04 dedicada ao navio "MSC Divina", exibindo o título principal em amarelo, o subtítulo "PELA PRIMEIRA VEZ NO BRASIL" em branco, uma galeria fotográfica em grade de 6 imagens e o CTA final "CONHEÇA ESSA OBRA-PRIMA"[cite: 1].
+Desenvolver a Seção 05 ("Cabines para Todos os Gostos"), apresentando a introdução textual explicativa e a lista vertical com os três principais tipos de acomodação em cards estilizados na cor coral[cite: 1].
 
 ## Instruções Detalhadas para Execução
 
 1. **Estrutura HTML**:
-   * Crie a seção `<section class="ship-section">` com fundo azul principal (`--blue-primary`)[cite: 1].
-   * Adicione o cabeçalho com o título e subtítulo[cite: 1]:
-     ```html
-     <header class="ship-heading">
-         <h2>MSC DIVINA</h2>
-         <h3>PELA PRIMEIRA VEZ NO BRASIL</h3>
-     </header>
-     ```
-   * Crie a galeria `.ship-gallery` contendo 6 imagens em `assets/navio/` (de `01.jpg` a `06.jpg`)[cite: 1].
-   * Adicione os indicadores visuais estáticos da galeria (`.gallery-indicators`) e o botão de CTA: `<div class="ship-cta">CONHEÇA ESSA OBRA-PRIMA</div>`[cite: 1].
+   * Crie a seção com `<section class="cabins-section">`[cite: 1].
+   * Insira o bloco de introdução (`.cabins-intro`) com o título principal e o parágrafo descritivo sobre a variedade de cabines do MSC Divina[cite: 1].
+   * Crie a lista de cabines (`.cabins-list`) contendo três artigos (`.cabin-card`):
+     1. **Cabine Interna**: "PARA QUEM QUER CURTIR CADA MINUTO DA FESTA E SÓ VAI PRA CABINE DORMIR.. UM POUQUINHO."[cite: 1]
+     2. **Externa Experience**: "PRA QUEM QUER CONFORTO PREMIUM E UMA EXPERIÊNCIA ALL INCLUSIVE."[cite: 1]
+     3. **Yacht Club**: "DESCUBRA UM IATE DENTRO DE UM NAVIO..."[cite: 1]
+   * Cada card deve possuir um botão interno `.cabin-button` com o texto "COMPRAR CABINE" e uma seta indicativa (`➜`)[cite: 1].
 
 2. **Estilização CSS**:
-   * Estilize o título em amarelo e o subtítulo em branco, ambos em caixa alta e com alta escala tipográfica[cite: 1].
-   * Configure `.ship-gallery` utilizando CSS Grid com `grid-template-columns: repeat(3, 1fr)` e gap de `7px`[cite: 1].
-   * Defina a proporção das imagens da galeria com `aspect-ratio: 16 / 9` e `object-fit: cover`[cite: 1].
+   * Configure os cards `.cabin-card` utilizando o fundo coral (`--blue-primary` nos títulos internos e texto descritivo em branco em caixa alta)[cite: 1].
+   * Estilize os títulos dos cards com a fonte `HDColton`, peso 500, tamanho responsivo `clamp(28px, 4vw, 44px)` e caixa alta[cite: 1].
+   * Estilize o botão `.cabin-button` com fundo transparente, sem bordas, cor `--blue-primary`, peso 800, sem preenchimento excessivo, parecendo integrado ao design tipográfico do card[cite: 1].
 
 ## Critério de Conclusão
-A seção apresenta o navio com títulos imponentes, uma galeria organizada em formato de grade 3x2 com proporção de tela panorâmica e o botão de chamada final[cite: 1].
+Os três cards de cabines aparecem empilhados verticalmente com o fundo coral característico, tipografia pesada em caixa alta e botões de compra integrados sem sombras excessivas[cite: 1].
